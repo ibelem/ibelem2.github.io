@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>W3C Launches the Web Machine Learning Working Group | Web Machine Learning</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="W3C Launches the Web Machine Learning Working Group" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This post is co-authored by Anssi Kostiainen (Working Group Chair), Ningxin Hu and Chai Chaoweeraprasit (Web Neural Network API Editors), and Ping Yu (TensorFlow.js Core team)." />
+<meta property="og:description" content="This post is co-authored by Anssi Kostiainen (Working Group Chair), Ningxin Hu and Chai Chaoweeraprasit (Web Neural Network API Editors), and Ping Yu (TensorFlow.js Core team)." />
+<link rel="canonical" href="/community/2021/04/20/w3c-launches-the-web-machine-learning-working-group.html" />
+<meta property="og:url" content="/community/2021/04/20/w3c-launches-the-web-machine-learning-working-group.html" />
+<meta property="og:site_name" content="Web Machine Learning" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-20T18:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="W3C Launches the Web Machine Learning Working Group" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"/community/2021/04/20/w3c-launches-the-web-machine-learning-working-group.html","headline":"W3C Launches the Web Machine Learning Working Group","dateModified":"2021-04-20T18:00:00+08:00","datePublished":"2021-04-20T18:00:00+08:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://avatars2.githubusercontent.com/u/42399997"}},"mainEntityOfPage":{"@type":"WebPage","@id":"/community/2021/04/20/w3c-launches-the-web-machine-learning-working-group.html"},"description":"This post is co-authored by Anssi Kostiainen (Working Group Chair), Ningxin Hu and Chai Chaoweeraprasit (Web Neural Network API Editors), and Ping Yu (TensorFlow.js Core team).","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Web Machine Learning" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Web Machine Learning</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">W3C Launches the Web Machine Learning Working Group</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-04-20T18:00:00+08:00" itemprop="datePublished">Apr 20, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><em>This post is co-authored by Anssi Kostiainen (Working Group Chair), Ningxin Hu and Chai Chaoweeraprasit (Web Neural Network API Editors), and Ping Yu (TensorFlow.js Core team).</em></p>
+
+<p>Machine Learning (ML) is a branch of Artificial Intelligence. A subfield of ML called Deep Learning with its various neural network architectures enables new compelling user experiences for web applications. <a href="https://webmachinelearning.github.io/webnn/#usecases">Use cases</a> range from improved video conferencing to accessibility-improving features, with potential improved privacy over cloud-based solutions. Enabling these use cases and more is the focus of the newly launched <a href="https://www.w3.org/groups/wg/webmachinelearning&quot;">Web Machine Learning Working Group</a>.</p>
+
+<p><img src="https://www.w3.org/blog/wp-content/uploads/2021/04/webnn.png" alt="WebNN Logo" /></p>
+
+<p>While some of these use cases can be implemented in-device in a constrained manner with existing Web APIs (e.g. WebGL graphics API or in the future <a href="https://gpuweb.github.io/gpuweb/">WebGPU</a>, the lack of access to platform capabilities such as dedicated ML hardware accelerators and native instructions constraint the scope of experiences and leads to inefficient implementations on modern hardware.</p>
+
+<p>With these design goals in mind, a <a href="https://www.w3.org/community/webmachinelearning/">W3C Community Group</a> started incubating work in 2018 for a possible Web Neural Network API, in response to encouraging feedback from a <a href="https://www.w3.org/2018/10/24-webmachinelearning-minutes.html">TPAC breakout session</a>. Starting October 2018, this Community Group identified key use cases working with diverse participants including major browser vendors, key ML JS frameworks, interested hardware vendors, and web developers. After identification of the key use cases, the group decomposed the key use cases into requirements and started drafting the <a href="https://webmachinelearning.github.io/webnn">Web Neural Network API specification</a> in mid-2019. The aim of this use case-driven design process was to put user needs first.</p>
+
+<blockquote>
+  <p>“Having access to the native ML accelerators, machine learning frameworks such as TensorFlow.js can greatly improve model execution efficiency and truly democratize ML for web developers.”</p>
+
+  <p>– Ping Yu, TLM for <a href="https://www.tensorflow.org/js&quot;">TensorFlow.js</a> at Google</p>
+</blockquote>
+
+<blockquote>
+  <p>“The <a href="https://www.w3.org/2020/06/machine-learning-workshop/talks/access_purpose_built_ml_hardware_with_web_neural_network_api.html#slide-10">early empirical results from the Web Neural Network API implementations</a> demonstrate tremendous power &amp; performance improvements of the Web AI workloads. Through access to the full native AI capabilities of the modern heterogeneous hardware, the Web Neural Network API enables a whole new transformative class of intelligent user experiences on the Open Web Platform across a variety of hardware, software, and device types.”</p>
+
+  <p>– Ningxin Hu, Principal Engineer, Web Platform Engineering at Intel</p>
+</blockquote>
+
+<p>W3C organized a <a href="https://www.w3.org/2020/06/machine-learning-workshop">workshop on Web and Machine Learning</a> over the course of August and September 2020. This workshop brought together web platform and machine learning practitioners to survey the broader intersection of Web technologies and Machine Learning, and one of the <a href="https://www.w3.org/2020/06/machine-learning-workshop/report.html">conclusions of the Workshop</a> was to propose that <a href="https://lists.w3.org/Archives/Public/public-new-work/2021Feb/0007.html">a new W3C Working Group should be formed</a> to standardize the Web Neural Network API, graduating from its incubation stage. As of 2021, the Community Group continues its incubation function working in parallel with the Working Group, similarly to e.g. W3C’s WebAssembly and WebGPU efforts.</p>
+
+<blockquote>
+  <p>“The Web Neural Network API is a very important step toward the future of the Intelligent Web where AI is infused into the user’s daily web experiences. With the current advances and the pace of innovations in the AI hardware landscape, it’ll help connect those experiences from the clouds and make them personal to the users through seamless native hardware performance on the edge devices across the entire web. That’s the future worth dreaming about!”</p>
+
+  <p>– <a href="https://www.w3.org/2020/06/machine-learning-workshop/talks/accelerated_graphics_and_compute_api_for_machine_learning_directml.html">Chai Chaoweeraprasit</a>, Principal Engineering Lead, Machine Learning and Compute Platform at Microsoft</p>
+</blockquote>
+
+<p>The <a href="https://www.w3.org/groups/wg/webmachinelearning">Web Machine Learning Working Group</a> plans to publish the First Public Working Draft of the Web Neural Network API during the first half of 2021 and welcomes new participants from the diverse W3C community to take part in helping identify new use cases, documenting ethical risks and their mitigations, contributing to technical work, conducting wide reviews in privacy, security, accessibility, and other important areas to ensure the perspectives of the diverse web community are heard. – which given some of the ethical impact of Machine Learning algorithms will be particularly critical to the work of the group. Join us!</p>
+
+<p>We would like to thank all the W3C Community Group and W3C workshop participants for their contributions that have helped shape this work, and W3C for providing a venue to advance this cross-industry effort toward wide adoption.</p>
+
+
+  </div><a class="u-url" href="/community/2021/04/20/w3c-launches-the-web-machine-learning-working-group.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Web Machine Learning</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Web Machine Learning</li><li><a class="u-email" href="mailto:anssi.kostiainen@__.com">anssi.kostiainen@__.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/webmachinelearning"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">webmachinelearning</span></a></li><li><a href="https://www.twitter.com/webmachinelearning"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">webmachinelearning</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Making Machine Learning a first-class web citizen</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
