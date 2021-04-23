@@ -1,0 +1,1 @@
+This repository exists to redirect traffic from [webmachinelearning.github.io](https://webmachinelearning.github.io) to [webmachinelearning.org](https://webmachinelearning.org) (now hosted from the [website](https://github.com/webmachinelearning/website) repo).
